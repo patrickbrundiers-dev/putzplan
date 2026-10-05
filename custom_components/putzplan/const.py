@@ -134,4 +134,11 @@ DEFAULT_TASKS: list[tuple[str, str, str, str, str, int | None]] = [
     ("Treppenhaus", "Stairwell", "Spinnweben entfernen", "Remove cobwebs", "mdi:spider-web", 14),
     ("Treppenhaus", "Stairwell", "Treppenhausfenster putzen", "Clean stairwell window", "mdi:window-closed-variant", 30),
     ("Treppenhaus", "Stairwell", "Fußleisten & Stufenkanten abwischen", "Wipe skirting & stair edges", "mdi:broom", 30),
+    ("Hinterhof", "Backyard", "Hof kehren", "Sweep yard", "mdi:broom", 14),
+    ("Hinterhof", "Backyard", "Laub entfernen", "Remove leaves", "mdi:leaf", 7),
+    ("Hinterhof", "Backyard", "Unkraut in Pflasterfugen entfernen", "Remove weeds from paving joints", "mdi:grass", 30),
+    ("Hinterhof", "Backyard", "Mülltonnenstellplatz kehren", "Sweep bin area", "mdi:trash-can", 30),
+    ("Hinterhof", "Backyard", "Hofablauf reinigen", "Clean yard drain", "mdi:pipe", 90),
+    ("Hinterhof", "Backyard", "Pflaster mit Hochdruckreiniger reinigen", "Pressure-wash paving", "mdi:water-pump", 180),
+    ("Hinterhof", "Backyard", "Außenlampen abwischen", "Wipe outdoor lamps", "mdi:outdoor-lamp", 90),
 ]
