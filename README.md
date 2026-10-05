@@ -8,7 +8,7 @@ Wiederkehrende Putz- und Haushaltsaufgaben, gruppiert nach Räumen – mit Inter
 - `sensor.putzplan_overdue`: Anzahl überfälliger Aufgaben (ideal für Benachrichtigungen)
 - Die Karte `custom:putzplan-card` (wird automatisch geladen, keine Ressource nötig)
 - Services zum Erledigen, Rückgängigmachen, Anlegen, Ändern und Löschen
-- Beim Einrichten optional 22 Beispielaufgaben (Küche, Bad, Wohnzimmer, Schlafzimmer, Allgemein)
+- Beim Einrichten optional 55 Beispielaufgaben mit realistischen Intervallen (Küche, Bad, Wohnzimmer, Schlafzimmer, Allgemein), z. B. Toilette alle 3 Tage, Bad wöchentlich, Backofen alle 3 Monate
 
 ## Installation (HACS)
 
@@ -74,3 +74,7 @@ automation:
 - **Überfällig**: letzte Erledigung + Intervall liegt in der Vergangenheit
 - **Bald**: fällig innerhalb von 3 Tagen
 - **Bei Bedarf** (kein Intervall) und **unbekannt** (noch nie erledigt) werden nie als überfällig markiert
+
+## Woher kommen die Intervalle?
+
+Die Beispielwerte orientieren sich an gängigen Putzplänen ([selbermachen.de](https://selbermachen.de/wohnen/putzplan-wie-oft-sie-was-sauber-machen-sollten), [wohnglueck.de](https://wohnglueck.de/artikel/putzplan-zuhause-sauber-machen-wie-oft-41926), [alltagsfuchs.de](https://alltagsfuchs.de/haushalt/reinigung-ordnung/wie-oft-muss-man-was-putzen-was-ist-wirklich-realistisch/)) und an Herstellerangaben zur Gerätepflege ([Finish](https://www.finish.de/geschirrspuel-leitfaden/wartung-pflege/spuelmaschinenfilter/), [Bauknecht](https://www.bauknecht.de/magazin/waschen-trocknen/pflege-wartung/waschmaschine-reinigen)). Es sind Richtwerte – passe sie über `putzplan.update_task` an deinen Haushalt an.
