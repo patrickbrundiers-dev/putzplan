@@ -8,7 +8,7 @@ Wiederkehrende Putz- und Haushaltsaufgaben, gruppiert nach Räumen – mit Inter
 - `sensor.putzplan_overdue`: Anzahl überfälliger Aufgaben (ideal für Benachrichtigungen)
 - Die Karte `custom:putzplan-card` (wird automatisch geladen, keine Ressource nötig)
 - Services zum Erledigen, Rückgängigmachen, Anlegen, Ändern und Löschen
-- Beim Einrichten optional 55 Beispielaufgaben mit realistischen Intervallen (Küche, Bad, Wohnzimmer, Schlafzimmer, Allgemein), z. B. Toilette alle 3 Tage, Bad wöchentlich, Backofen alle 3 Monate
+- Beim Einrichten optional 75 Beispielaufgaben mit realistischen Intervallen (Küche, Bad, Wohnzimmer, Schlafzimmer, Balkon, Allgemein), z. B. Toilette alle 3 Tage, Bad wöchentlich, Backofen alle 3 Monate
 
 ## Installation (HACS)
 
@@ -77,4 +77,4 @@ automation:
 
 ## Woher kommen die Intervalle?
 
-Die Beispielwerte orientieren sich an gängigen Putzplänen ([selbermachen.de](https://selbermachen.de/wohnen/putzplan-wie-oft-sie-was-sauber-machen-sollten), [wohnglueck.de](https://wohnglueck.de/artikel/putzplan-zuhause-sauber-machen-wie-oft-41926), [alltagsfuchs.de](https://alltagsfuchs.de/haushalt/reinigung-ordnung/wie-oft-muss-man-was-putzen-was-ist-wirklich-realistisch/)) und an Herstellerangaben zur Gerätepflege ([Finish](https://www.finish.de/geschirrspuel-leitfaden/wartung-pflege/spuelmaschinenfilter/), [Bauknecht](https://www.bauknecht.de/magazin/waschen-trocknen/pflege-wartung/waschmaschine-reinigen)). Es sind Richtwerte – passe sie über `putzplan.update_task` an deinen Haushalt an.
+Die Beispielwerte orientieren sich an gängigen Putzplänen ([selbermachen.de](https://selbermachen.de/wohnen/putzplan-wie-oft-sie-was-sauber-machen-sollten), [wohnglueck.de](https://wohnglueck.de/artikel/putzplan-zuhause-sauber-machen-wie-oft-41926), [alltagsfuchs.de](https://alltagsfuchs.de/haushalt/reinigung-ordnung/wie-oft-muss-man-was-putzen-was-ist-wirklich-realistisch/)) und an Herstellerangaben zur Gerätepflege ([Finish](https://www.finish.de/geschirrspuel-leitfaden/wartung-pflege/spuelmaschinenfilter/), [Bauknecht](https://www.bauknecht.de/magazin/waschen-trocknen/pflege-wartung/waschmaschine-reinigen), [BRITA](https://www.brita.de/wasser-wissen/wasserfilter-wechseln)), Rauchmelder-Wartung nach DIN 14676 ([rauchmelder-shop.de](https://www.rauchmelder-shop.de/rauchmelderpflicht/rauchmelder-testen-haeufigkeit-und-anleitung/)) sowie Ratgebern zu [Klobürste](https://utopia.de/ratgeber/klobuerste-wechseln-so-oft-solltest-du-es-tun_657931/), [Mülleimern](https://utopia.de/ratgeber/muelleimer-reinigen-wie-oft-und-mit-welchen-haus-mitteln_534796/) und [Fensterpflege](https://www.aroundhome.de/fenster/pflege-wartung/). Wo Quellen keine Zahl nennen, sind die Werte Schätzungen. Es sind Richtwerte – passe sie über `putzplan.update_task` an deinen Haushalt an.
