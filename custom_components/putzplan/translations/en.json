@@ -1,0 +1,63 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Set up Putzplan",
+        "description": "Putzplan stores all cleaning tasks in Home Assistant and exposes each task as a sensor.",
+        "data": {
+          "seed": "Create example tasks (kitchen, bathroom, living room, bedroom, general)"
+        }
+      }
+    },
+    "abort": {
+      "single_instance_allowed": "Putzplan is already set up."
+    }
+  },
+  "services": {
+    "mark_done": {
+      "name": "Mark as done",
+      "description": "Sets the last-done date of a task (default: today).",
+      "fields": {
+        "entity_id": {"name": "Task", "description": "One or more Putzplan tasks."},
+        "date": {"name": "Date", "description": "Done on (default: today)."}
+      }
+    },
+    "undo_done": {
+      "name": "Undo done",
+      "description": "Restores the previous last-done date.",
+      "fields": {
+        "entity_id": {"name": "Task", "description": "One or more Putzplan tasks."}
+      }
+    },
+    "add_task": {
+      "name": "Add task",
+      "description": "Creates a new cleaning task.",
+      "fields": {
+        "name": {"name": "Name", "description": "Task name."},
+        "room": {"name": "Room", "description": "Room the task is listed under."},
+        "icon": {"name": "Icon", "description": "MDI icon, e.g. mdi:broom."},
+        "interval_days": {"name": "Interval (days)", "description": "Every N days; 0 or empty = as needed."},
+        "last_done": {"name": "Last done", "description": "Optional: when the task was last done."}
+      }
+    },
+    "update_task": {
+      "name": "Update task",
+      "description": "Changes name, room, icon, interval or last-done date.",
+      "fields": {
+        "entity_id": {"name": "Task", "description": "One or more Putzplan tasks."},
+        "name": {"name": "Name", "description": "New name."},
+        "room": {"name": "Room", "description": "New room."},
+        "icon": {"name": "Icon", "description": "New MDI icon."},
+        "interval_days": {"name": "Interval (days)", "description": "New interval; 0 = as needed."},
+        "last_done": {"name": "Last done", "description": "New last-done date."}
+      }
+    },
+    "remove_task": {
+      "name": "Remove task",
+      "description": "Deletes a task and its sensor.",
+      "fields": {
+        "entity_id": {"name": "Task", "description": "One or more Putzplan tasks."}
+      }
+    }
+  }
+}

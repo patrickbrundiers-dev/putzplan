@@ -1,0 +1,13 @@
+{
+  "domain": "putzplan",
+  "name": "Putzplan",
+  "codeowners": ["@patrickbrundiers-dev"],
+  "config_flow": true,
+  "dependencies": ["http", "frontend"],
+  "documentation": "https://github.com/patrickbrundiers-dev/putzplan",
+  "integration_type": "service",
+  "iot_class": "calculated",
+  "issue_tracker": "https://github.com/patrickbrundiers-dev/putzplan/issues",
+  "requirements": [],
+  "version": "1.0.0"
+}

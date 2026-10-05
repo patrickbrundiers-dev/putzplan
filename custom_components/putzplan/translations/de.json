@@ -1,0 +1,63 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Putzplan einrichten",
+        "description": "Der Putzplan speichert alle Aufgaben in Home Assistant und stellt jede Aufgabe als Sensor bereit.",
+        "data": {
+          "seed": "Beispielaufgaben anlegen (Küche, Bad, Wohnzimmer, Schlafzimmer, Allgemein)"
+        }
+      }
+    },
+    "abort": {
+      "single_instance_allowed": "Der Putzplan ist bereits eingerichtet."
+    }
+  },
+  "services": {
+    "mark_done": {
+      "name": "Als erledigt markieren",
+      "description": "Setzt das Erledigt-Datum einer Aufgabe (Standard: heute).",
+      "fields": {
+        "entity_id": {"name": "Aufgabe", "description": "Eine oder mehrere Putzplan-Aufgaben."},
+        "date": {"name": "Datum", "description": "Erledigt am (Standard: heute)."}
+      }
+    },
+    "undo_done": {
+      "name": "Erledigt rückgängig machen",
+      "description": "Stellt das vorherige Erledigt-Datum wieder her.",
+      "fields": {
+        "entity_id": {"name": "Aufgabe", "description": "Eine oder mehrere Putzplan-Aufgaben."}
+      }
+    },
+    "add_task": {
+      "name": "Aufgabe hinzufügen",
+      "description": "Legt eine neue Putzaufgabe an.",
+      "fields": {
+        "name": {"name": "Name", "description": "Name der Aufgabe."},
+        "room": {"name": "Raum", "description": "Raum, unter dem die Aufgabe angezeigt wird."},
+        "icon": {"name": "Symbol", "description": "MDI-Symbol, z. B. mdi:broom."},
+        "interval_days": {"name": "Intervall (Tage)", "description": "Alle wie viele Tage; 0 oder leer = bei Bedarf."},
+        "last_done": {"name": "Zuletzt erledigt", "description": "Optional: wann die Aufgabe zuletzt gemacht wurde."}
+      }
+    },
+    "update_task": {
+      "name": "Aufgabe ändern",
+      "description": "Ändert Name, Raum, Symbol, Intervall oder Erledigt-Datum.",
+      "fields": {
+        "entity_id": {"name": "Aufgabe", "description": "Eine oder mehrere Putzplan-Aufgaben."},
+        "name": {"name": "Name", "description": "Neuer Name."},
+        "room": {"name": "Raum", "description": "Neuer Raum."},
+        "icon": {"name": "Symbol", "description": "Neues MDI-Symbol."},
+        "interval_days": {"name": "Intervall (Tage)", "description": "Neues Intervall; 0 = bei Bedarf."},
+        "last_done": {"name": "Zuletzt erledigt", "description": "Neues Erledigt-Datum."}
+      }
+    },
+    "remove_task": {
+      "name": "Aufgabe löschen",
+      "description": "Löscht eine Aufgabe samt Sensor.",
+      "fields": {
+        "entity_id": {"name": "Aufgabe", "description": "Eine oder mehrere Putzplan-Aufgaben."}
+      }
+    }
+  }
+}

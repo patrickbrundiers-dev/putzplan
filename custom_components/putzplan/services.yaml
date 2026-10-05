@@ -1,0 +1,97 @@
+mark_done:
+  fields:
+    entity_id:
+      required: true
+      selector:
+        entity:
+          integration: putzplan
+          domain: sensor
+          multiple: true
+    date:
+      required: false
+      selector:
+        date:
+
+undo_done:
+  fields:
+    entity_id:
+      required: true
+      selector:
+        entity:
+          integration: putzplan
+          domain: sensor
+          multiple: true
+
+add_task:
+  fields:
+    name:
+      required: true
+      example: "Fenster putzen"
+      selector:
+        text:
+    room:
+      required: true
+      example: "Wohnzimmer"
+      selector:
+        text:
+    icon:
+      required: false
+      example: "mdi:window-closed-variant"
+      selector:
+        icon:
+    interval_days:
+      required: false
+      selector:
+        number:
+          min: 0
+          max: 3650
+          mode: box
+          unit_of_measurement: days
+    last_done:
+      required: false
+      selector:
+        date:
+
+update_task:
+  fields:
+    entity_id:
+      required: true
+      selector:
+        entity:
+          integration: putzplan
+          domain: sensor
+          multiple: true
+    name:
+      required: false
+      selector:
+        text:
+    room:
+      required: false
+      selector:
+        text:
+    icon:
+      required: false
+      selector:
+        icon:
+    interval_days:
+      required: false
+      selector:
+        number:
+          min: 0
+          max: 3650
+          mode: box
+          unit_of_measurement: days
+    last_done:
+      required: false
+      selector:
+        date:
+
+remove_task:
+  fields:
+    entity_id:
+      required: true
+      selector:
+        entity:
+          integration: putzplan
+          domain: sensor
+          multiple: true
