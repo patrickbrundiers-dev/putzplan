@@ -8,7 +8,7 @@ Wiederkehrende Putz- und Haushaltsaufgaben, gruppiert nach Räumen – mit Inter
 - `sensor.putzplan_overdue`: Anzahl überfälliger Aufgaben (ideal für Benachrichtigungen)
 - Die Karte `custom:putzplan-card` (wird automatisch geladen, keine Ressource nötig)
 - Services zum Erledigen, Rückgängigmachen, Anlegen, Ändern und Löschen
-- Beim Einrichten optional 105 Beispielaufgaben mit realistischen Intervallen (Küche, Bad, Wohnzimmer, Schlafzimmer, Kinderzimmer, Wintergarten, Balkon, Treppenhaus, Hinterhof, Allgemein), z. B. Toilette alle 3 Tage, Bad wöchentlich, Backofen alle 3 Monate
+- Beim Einrichten optional 104 Beispielaufgaben mit realistischen Intervallen (Küche, Bad, Wohnzimmer, Schlafzimmer, Kinderzimmer, Wintergarten, Balkon, Treppenhaus, Hinterhof, Allgemein), z. B. Toilette alle 3 Tage, Bad wöchentlich, Backofen alle 3 Monate
 
 ## Installation (HACS)
 

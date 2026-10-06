@@ -119,7 +119,6 @@ DEFAULT_TASKS: list[tuple[str, str, str, str, str, int | None]] = [
     ("Allgemein", "General", "Türen abwischen", "Wipe doors", "mdi:door", 90),
     ("Allgemein", "General", "Fußmatten waschen", "Wash door mats", "mdi:rug", 28),
     ("Allgemein", "General", "Fensterbänke abwischen", "Wipe window sills", "mdi:window-closed-variant", 30),
-    ("Allgemein", "General", "Mülltonnen draußen reinigen", "Clean outdoor bins", "mdi:trash-can", 30),
     ("Allgemein", "General", "Schuhschrank & Garderobe auswischen", "Wipe shoe cabinet & wardrobe", "mdi:shoe-formal", 90),
     ("Allgemein", "General", "Fensterrahmen & Dichtungen reinigen", "Clean window frames & seals", "mdi:window-frame", 365),
     ("Allgemein", "General", "Fensterbeschläge ölen", "Oil window hinges", "mdi:oil", 365),
